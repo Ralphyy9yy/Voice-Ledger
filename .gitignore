@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+data/
+*.db
+*.db-shm
+*.db-wal
+backups/
+recordings/
+models/
+.local-tools/
+playwright-report/
+test-results/
+benchmarks/results/

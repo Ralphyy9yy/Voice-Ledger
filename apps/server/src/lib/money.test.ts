@@ -1,0 +1,2 @@
+import {describe,expect,it} from 'vitest';import {calculateTotal,parseDecimalToCentavos} from './money.js';
+describe('money',()=>{it('parses decimals without floating point rounding',()=>{expect(parseDecimalToCentavos('₱1,234.50')).toBe(123450);expect(parseDecimalToCentavos('20')).toBe(2000)});it('rejects excess precision',()=>expect(()=>parseDecimalToCentavos('1.005')).toThrow());it('calculates safe integer totals',()=>expect(calculateTotal([{quantity:3,unitPriceCentavos:2000},{quantity:2,unitPriceCentavos:125}])).toBe(6250))});

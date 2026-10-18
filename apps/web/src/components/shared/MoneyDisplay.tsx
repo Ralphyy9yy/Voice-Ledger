@@ -1,0 +1,1 @@
+import {money} from '../../lib/currency';export function MoneyDisplay({value,className=''}:{value:number;className?:string}){return <span className={`tabular-nums ${className}`}>{money(value)}</span>}

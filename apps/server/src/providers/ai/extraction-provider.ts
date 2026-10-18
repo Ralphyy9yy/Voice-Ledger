@@ -1,0 +1,1 @@
+import type {Extraction} from '@voiceledger/shared';export interface ExtractionProvider{extract(text:string,signal?:AbortSignal):Promise<Extraction>;status():Promise<{available:boolean;detail:string}>}

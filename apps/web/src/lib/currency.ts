@@ -1,0 +1,1 @@
+export const money=(centavos:number)=>new Intl.NumberFormat('en-PH',{style:'currency',currency:'PHP'}).format(centavos/100);export function toCentavos(value:string){const clean=value.trim().replace(/[₱,\s]/g,'');if(!/^\d+(\.\d{1,2})?$/.test(clean))return null;const [w,f='']=clean.split('.');const n=Number(w)*100+Number(f.padEnd(2,'0'));return Number.isSafeInteger(n)?n:null}
