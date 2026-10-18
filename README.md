@@ -2,6 +2,23 @@
 
 VoiceLedger is a local-first, single-user ledger for small sellers. Speak or type a sale or expense, review every field, and explicitly confirm before anything is stored. It uses PHP and reports days in `Asia/Manila`.
 
+## See it in action
+
+[![VoiceLedger walkthrough showing the overview, typed entry, draft review, saving, and daily cash closing](docs/media/voiceledger-demo.gif)](docs/media/voiceledger-demo.mp4)
+
+[Watch or download the full MP4 walkthrough](docs/media/voiceledger-demo.mp4).
+
+The walkthrough uses fictional demo entries and shows the manual review workflow: type a transaction, review the text alongside the draft, confirm the details, and compare counted cash with the day's ledger. Voice transcription and local AI inference are not demonstrated in this recording.
+
+<details>
+<summary>Overview screenshot</summary>
+
+![VoiceLedger overview with daily sales, expenses, net cash movement, and recent transactions using fictional demo data](docs/media/overview.png)
+
+</details>
+
+To record an updated preview after building the app, run `node scripts/record-demo.mjs`. It requires Playwright Chromium and FFmpeg (`FFMPEG_PATH`, or `.local-tools/ffmpeg.exe`) and uses a separate temporary database.
+
 ## Requirements (Windows)
 
 - Node.js 22 LTS (`node --version` must be 22.x)
